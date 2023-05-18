@@ -12,6 +12,7 @@ import com.example.shonamonirprothompath.adapter.AlphabetGridAdapter
 import com.example.shonamonirprothompath.adapter.AlphabetGridDetailsAdapter
 import com.example.shonamonirprothompath.model.AlphabetGridModel
 
+/** Intent from BanjonBornoActivity **/
 class BanjonBornoDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

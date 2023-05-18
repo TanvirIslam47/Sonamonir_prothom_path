@@ -10,6 +10,7 @@ import com.example.shonamonirprothompath.R
 import com.example.shonamonirprothompath.adapter.AlphabetGridDetailsAdapter
 import com.example.shonamonirprothompath.model.AlphabetGridModel
 
+/** Intent from ShorBornoActivity **/
 class ShorBornoDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

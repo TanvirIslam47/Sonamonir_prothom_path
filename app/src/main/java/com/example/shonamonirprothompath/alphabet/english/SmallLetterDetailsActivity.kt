@@ -10,452 +10,449 @@ import com.example.shonamonirprothompath.R
 import com.example.shonamonirprothompath.adapter.AlphabetGridDetailsAdapter
 import com.example.shonamonirprothompath.model.AlphabetGridModel
 
-/** Intent from CapitalLetterActivity **/
-class CapitalLetterDetailsActivity : AppCompatActivity() {
+class SmallLetterDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_capital_letter_details)
-
+        setContentView(R.layout.activity_small_letter_details)
         val letterTv = findViewById<TextView>(R.id.letterTvId)
         val pronunciationTv = findViewById<TextView>(R.id.pronunciationTvId)
         val wordTv = findViewById<TextView>(R.id.wordTvId)
         val meaningTv = findViewById<TextView>(R.id.meaningTvId)
         val objectImg = findViewById<ImageView>(R.id.objectImgId)
-        val capitalLetterGridView = findViewById<GridView>(R.id.capitalLetterGridViewId)
-        val capitalLetterGridList = ArrayList<AlphabetGridModel>()
+        val smallLetterGridView = findViewById<GridView>(R.id.smallLetterGridViewId)
+        val smallLetterGridList = ArrayList<AlphabetGridModel>()
 
         val bundle: Bundle? = intent.extras
         val letter: String? = intent.getStringExtra("key")
 
-        capitalLetterGridList.add(AlphabetGridModel("A"))
-        capitalLetterGridList.add(AlphabetGridModel("B"))
-        capitalLetterGridList.add(AlphabetGridModel("C"))
-        capitalLetterGridList.add(AlphabetGridModel("D"))
-        capitalLetterGridList.add(AlphabetGridModel("E"))
-        capitalLetterGridList.add(AlphabetGridModel("F"))
-        capitalLetterGridList.add(AlphabetGridModel("G"))
-        capitalLetterGridList.add(AlphabetGridModel("H"))
-        capitalLetterGridList.add(AlphabetGridModel("I"))
-        capitalLetterGridList.add(AlphabetGridModel("J"))
-        capitalLetterGridList.add(AlphabetGridModel("K"))
-        capitalLetterGridList.add(AlphabetGridModel("L"))
-        capitalLetterGridList.add(AlphabetGridModel("M"))
-        capitalLetterGridList.add(AlphabetGridModel("N"))
-        capitalLetterGridList.add(AlphabetGridModel("O"))
-        capitalLetterGridList.add(AlphabetGridModel("P"))
-        capitalLetterGridList.add(AlphabetGridModel("Q"))
-        capitalLetterGridList.add(AlphabetGridModel("R"))
-        capitalLetterGridList.add(AlphabetGridModel("S"))
-        capitalLetterGridList.add(AlphabetGridModel("T"))
-        capitalLetterGridList.add(AlphabetGridModel("U"))
-        capitalLetterGridList.add(AlphabetGridModel("V"))
-        capitalLetterGridList.add(AlphabetGridModel("W"))
-        capitalLetterGridList.add(AlphabetGridModel("X"))
-        capitalLetterGridList.add(AlphabetGridModel("Y"))
-        capitalLetterGridList.add(AlphabetGridModel("Z"))
+        smallLetterGridList.add(AlphabetGridModel("a"))
+        smallLetterGridList.add(AlphabetGridModel("b"))
+        smallLetterGridList.add(AlphabetGridModel("c"))
+        smallLetterGridList.add(AlphabetGridModel("d"))
+        smallLetterGridList.add(AlphabetGridModel("e"))
+        smallLetterGridList.add(AlphabetGridModel("f"))
+        smallLetterGridList.add(AlphabetGridModel("g"))
+        smallLetterGridList.add(AlphabetGridModel("h"))
+        smallLetterGridList.add(AlphabetGridModel("i"))
+        smallLetterGridList.add(AlphabetGridModel("j"))
+        smallLetterGridList.add(AlphabetGridModel("k"))
+        smallLetterGridList.add(AlphabetGridModel("l"))
+        smallLetterGridList.add(AlphabetGridModel("m"))
+        smallLetterGridList.add(AlphabetGridModel("n"))
+        smallLetterGridList.add(AlphabetGridModel("o"))
+        smallLetterGridList.add(AlphabetGridModel("p"))
+        smallLetterGridList.add(AlphabetGridModel("q"))
+        smallLetterGridList.add(AlphabetGridModel("r"))
+        smallLetterGridList.add(AlphabetGridModel("s"))
+        smallLetterGridList.add(AlphabetGridModel("t"))
+        smallLetterGridList.add(AlphabetGridModel("u"))
+        smallLetterGridList.add(AlphabetGridModel("v"))
+        smallLetterGridList.add(AlphabetGridModel("w"))
+        smallLetterGridList.add(AlphabetGridModel("x"))
+        smallLetterGridList.add(AlphabetGridModel("y"))
+        smallLetterGridList.add(AlphabetGridModel("z"))
 
-        val adapter = AlphabetGridDetailsAdapter(this, capitalLetterGridList)
-        capitalLetterGridView.setAdapter(adapter)
+        val adapter = AlphabetGridDetailsAdapter(this, smallLetterGridList)
+        smallLetterGridView.setAdapter(adapter)
 
-        if (letter == "A") {
+        if (letter == "a") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "A"
+            letterTv.text = "a"
             pronunciationTv.text = "এ"
             wordTv.text = "Apple"
             meaningTv.text = "আপেল"
             objectImg.setImageResource(R.drawable.apple)
         }
-        if (letter == "B") {
+        if (letter == "b") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "B"
+            letterTv.text = "b"
             pronunciationTv.text = "বি"
             wordTv.text = "Ball"
             meaningTv.text = "বল"
             objectImg.setImageResource(R.drawable.ball)
         }
-        if (letter == "C") {
+        if (letter == "c") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "C"
+            letterTv.text = "c"
             pronunciationTv.text = "সি"
             wordTv.text = "Cat"
             meaningTv.text = "বিড়াল"
             objectImg.setImageResource(R.drawable.cat)
         }
-        if (letter == "D") {
+        if (letter == "d") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "D"
+            letterTv.text = "d"
             pronunciationTv.text = "ডি"
             wordTv.text = "Dog"
             meaningTv.text = "কুকুর"
             objectImg.setImageResource(R.drawable.dog)
         }
-        if (letter == "E") {
+        if (letter == "e") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "E"
+            letterTv.text = "e"
             pronunciationTv.text = "ই"
             wordTv.text = "Elephant"
             meaningTv.text = "হাতি"
             objectImg.setImageResource(R.drawable.hati)
         }
-        if (letter == "F") {
+        if (letter == "f") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "F"
+            letterTv.text = "f"
             pronunciationTv.text = "এফ"
             wordTv.text = "Frog"
             meaningTv.text = "ব্যাঙ"
             objectImg.setImageResource(R.drawable.bang)
         }
-        if (letter == "G") {
+        if (letter == "g") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "G"
+            letterTv.text = "g"
             pronunciationTv.text = "জি"
             wordTv.text = "Goat"
             meaningTv.text = "ছাগল"
             objectImg.setImageResource(R.drawable.goat)
         }
-        if (letter == "H") {
+        if (letter == "h") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "H"
+            letterTv.text = "h"
             pronunciationTv.text = "এইচ"
             wordTv.text = "House"
             meaningTv.text = "বাড়ি"
             objectImg.setImageResource(R.drawable.house)
         }
-        if (letter == "I") {
+        if (letter == "i") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "I"
+            letterTv.text = "i"
             pronunciationTv.text = "আই"
             wordTv.text = "Ice-Cream"
             meaningTv.text = "আইস ক্রিম"
             objectImg.setImageResource(R.drawable.ice_cream)
         }
-        if (letter == "J") {
+        if (letter == "j") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "J"
+            letterTv.text = "j"
             pronunciationTv.text = "যে"
             wordTv.text = "Jack fruit"
             meaningTv.text = "কাঠাল"
             objectImg.setImageResource(R.drawable.jackfruit)
         }
-        if (letter == "K") {
+        if (letter == "k") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "K"
+            letterTv.text = "k"
             pronunciationTv.text = "কে"
             wordTv.text = "Key"
             meaningTv.text = "চাবি"
             objectImg.setImageResource(R.drawable.keys)
         }
-        if (letter == "L") {
+        if (letter == "l") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "L"
+            letterTv.text = "l"
             pronunciationTv.text = "এল"
             wordTv.text = "Lemon"
             meaningTv.text = "লেবু"
             objectImg.setImageResource(R.drawable.lemon)
         }
-        if (letter == "M") {
+        if (letter == "m") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "M"
+            letterTv.text = "m"
             pronunciationTv.text = "এম"
             wordTv.text = "Mango"
             meaningTv.text = "আম"
             objectImg.setImageResource(R.drawable.mango)
         }
-        if (letter == "N") {
+        if (letter == "n") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "N"
+            letterTv.text = "n"
             pronunciationTv.text = "এন"
             wordTv.text = "Nose"
             meaningTv.text = "নাক"
             objectImg.setImageResource(R.drawable.nose)
         }
-        if (letter == "O") {
+        if (letter == "o") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "O"
+            letterTv.text = "o"
             pronunciationTv.text = "ও"
             wordTv.text = "Otter"
             meaningTv.text = "ভোঁদড়"
             objectImg.setImageResource(R.drawable.otter)
         }
-        if (letter == "P") {
+        if (letter == "p") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "P"
+            letterTv.text = "p"
             pronunciationTv.text = "পি"
             wordTv.text = "Parrot"
             meaningTv.text = "টিয়া পাখি"
             objectImg.setImageResource(R.drawable.tiya)
         }
-        if (letter == "Q") {
+        if (letter == "q") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "Q"
+            letterTv.text = "q"
             pronunciationTv.text = "কিউ"
             wordTv.text = "Quill"
             meaningTv.text = "পালকের কলম"
             objectImg.setImageResource(R.drawable.quill)
         }
-        if (letter == "R") {
+        if (letter == "r") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "R"
+            letterTv.text = "r"
             pronunciationTv.text = "আর"
             wordTv.text = "Radish"
             meaningTv.text = "মুলা"
             objectImg.setImageResource(R.drawable.radish)
         }
-        if (letter == "S") {
+        if (letter == "s") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "S"
+            letterTv.text = "s"
             pronunciationTv.text = "এস"
             wordTv.text = "Squirrel"
             meaningTv.text = "কাঠবিড়াল"
             objectImg.setImageResource(R.drawable.squirrel)
         }
-        if (letter == "T") {
+        if (letter == "t") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "T"
+            letterTv.text = "t"
             pronunciationTv.text = "টি"
             wordTv.text = "Tiger"
             meaningTv.text = "বাঘ"
             objectImg.setImageResource(R.drawable.tiger)
         }
-        if (letter == "U") {
+        if (letter == "u") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "U"
+            letterTv.text = "u"
             pronunciationTv.text = "ইউ"
             wordTv.text = "Umbrella"
             meaningTv.text = "ছাতা"
             objectImg.setImageResource(R.drawable.chata)
         }
-        if (letter == "V") {
+        if (letter == "v") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "V"
+            letterTv.text = "v"
             pronunciationTv.text = "ভি"
             wordTv.text = "Vas"
             meaningTv.text = "দানি"
             objectImg.setImageResource(R.drawable.vas)
         }
-        if (letter == "W") {
+        if (letter == "w") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "W"
+            letterTv.text = "w"
             pronunciationTv.text = "ডব্লিউ"
             wordTv.text = "Water melon"
             meaningTv.text = "তরমুজ"
             objectImg.setImageResource(R.drawable.tormuj)
         }
-        if (letter == "X") {
+        if (letter == "x") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "X"
+            letterTv.text = "x"
             pronunciationTv.text = "এক্স"
             wordTv.text = "Xebec"
             meaningTv.text = "জেবেক"
             objectImg.setImageResource(R.drawable.xebec)
         }
-        if (letter == "Y") {
+        if (letter == "y") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "Y"
+            letterTv.text = "y"
             pronunciationTv.text = "ওয়াই"
             wordTv.text = "Yo-yo"
             meaningTv.text = "ইয়ো ইয়ো"
             objectImg.setImageResource(R.drawable.yo_yo)
         }
-        if (letter == "Z") {
+        if (letter == "z") {
 //            shorBornoGridView.setSelector(0);
-            letterTv.text = "Z"
+            letterTv.text = "z"
             pronunciationTv.text = "যেড"
             wordTv.text = "Zebra"
             meaningTv.text = "জেব্রা"
             objectImg.setImageResource(R.drawable.zebra)
         }
 
-        capitalLetterGridView.setOnItemClickListener(AdapterView.OnItemClickListener { parent, view, position, id ->
-            if (capitalLetterGridList.get(position).gridName == "A") {
-                letterTv.text = "A"
+        smallLetterGridView.setOnItemClickListener(AdapterView.OnItemClickListener { parent, view, position, id ->
+            if (smallLetterGridList.get(position).gridName == "a") {
+                letterTv.text = "a"
                 pronunciationTv.text = "এ"
                 wordTv.text = "Apple"
                 meaningTv.text = "আপেল"
                 objectImg.setImageResource(R.drawable.apple)
             }
-            if (capitalLetterGridList.get(position).gridName == "B") {
-                letterTv.text = "B"
+            if (smallLetterGridList.get(position).gridName == "b") {
+                letterTv.text = "b"
                 pronunciationTv.text = "বি"
                 wordTv.text = "Ball"
                 meaningTv.text = "বল"
                 objectImg.setImageResource(R.drawable.ball)
             }
-            if (capitalLetterGridList.get(position).gridName == "C") {
-                letterTv.text = "C"
+            if (smallLetterGridList.get(position).gridName == "c") {
+                letterTv.text = "c"
                 pronunciationTv.text = "সি"
                 wordTv.text = "Cat"
                 meaningTv.text = "বিড়াল"
                 objectImg.setImageResource(R.drawable.cat)
             }
-            if (capitalLetterGridList.get(position).gridName == "D") {
-                letterTv.text = "D"
+            if (smallLetterGridList.get(position).gridName == "d") {
+                letterTv.text = "d"
                 pronunciationTv.text = "ডি"
                 wordTv.text = "Dog"
                 meaningTv.text = "কুকুর"
                 objectImg.setImageResource(R.drawable.dog)
             }
 
-            if (capitalLetterGridList.get(position).gridName == "E") {
-                letterTv.text = "E"
+            if (smallLetterGridList.get(position).gridName == "e") {
+                letterTv.text = "e"
                 pronunciationTv.text = "ই"
                 wordTv.text = "Elephant"
                 meaningTv.text = "হাতি"
                 objectImg.setImageResource(R.drawable.hati)
             }
 
-            if (capitalLetterGridList.get(position).gridName == "F") {
-                letterTv.text = "F"
+            if (smallLetterGridList.get(position).gridName == "f") {
+                letterTv.text = "f"
                 pronunciationTv.text = "এফ"
                 wordTv.text = "Frog"
                 meaningTv.text = "ব্যাঙ"
                 objectImg.setImageResource(R.drawable.bang)
             }
 
-            if (capitalLetterGridList.get(position).gridName == "G") {
-                letterTv.text = "G"
+            if (smallLetterGridList.get(position).gridName == "g") {
+                letterTv.text = "g"
                 pronunciationTv.text = "জি"
                 wordTv.text = "Goat"
                 meaningTv.text = "ছাগল"
                 objectImg.setImageResource(R.drawable.goat)
             }
-            if (capitalLetterGridList[position].gridName == "H") {
-                letterTv.text = "H"
+            if (smallLetterGridList[position].gridName == "h") {
+                letterTv.text = "h"
                 pronunciationTv.text = "এইচ"
                 wordTv.text = "House"
                 meaningTv.text = "বাড়ি"
                 objectImg.setImageResource(R.drawable.house)
             }
-            if (capitalLetterGridList.get(position).gridName == "I") {
-                letterTv.text = "I"
+            if (smallLetterGridList.get(position).gridName == "i") {
+                letterTv.text = "i"
                 pronunciationTv.text = "আই"
                 wordTv.text = "Ice cream"
                 meaningTv.text = "আইস ক্রিম"
                 objectImg.setImageResource(R.drawable.ice_cream)
             }
-            if (capitalLetterGridList.get(position).gridName == "J") {
-                letterTv.text = "J"
+            if (smallLetterGridList.get(position).gridName == "j") {
+                letterTv.text = "j"
                 pronunciationTv.text = "যে"
                 wordTv.text = "Jack fruit"
                 meaningTv.text = "কাঠাল"
                 objectImg.setImageResource(R.drawable.jackfruit)
             }
-            if (capitalLetterGridList.get(position).gridName == "K") {
-                letterTv.text = "K"
+            if (smallLetterGridList.get(position).gridName == "k") {
+                letterTv.text = "k"
                 pronunciationTv.text = "কে"
                 wordTv.text = "Key"
                 meaningTv.text = "চাবি"
                 objectImg.setImageResource(R.drawable.keys)
             }
-            if (capitalLetterGridList.get(position).gridName == "L") {
-                letterTv.text = "L"
+            if (smallLetterGridList.get(position).gridName == "l") {
+                letterTv.text = "l"
                 pronunciationTv.text = "এল"
                 wordTv.text = "Lemon"
                 meaningTv.text = "লেবু"
                 objectImg.setImageResource(R.drawable.lemon)
             }
-            if (capitalLetterGridList.get(position).gridName == "M") {
-                letterTv.text = "M"
+            if (smallLetterGridList.get(position).gridName == "m") {
+                letterTv.text = "m"
                 pronunciationTv.text = "এম"
                 wordTv.text = "Mango"
                 meaningTv.text = "আম"
                 objectImg.setImageResource(R.drawable.mango)
             }
-            if (capitalLetterGridList.get(position).gridName == "N") {
-                letterTv.text = "N"
+            if (smallLetterGridList.get(position).gridName == "n") {
+                letterTv.text = "n"
                 pronunciationTv.text = "এন"
                 wordTv.text = "Nose"
                 meaningTv.text = "নাক"
                 objectImg.setImageResource(R.drawable.nose)
             }
-            if (capitalLetterGridList.get(position).gridName == "O") {
-                letterTv.text = "O"
+            if (smallLetterGridList.get(position).gridName == "o") {
+                letterTv.text = "o"
                 pronunciationTv.text = "ও"
                 wordTv.text = "Otter"
                 meaningTv.text = "ভোঁদড়"
                 objectImg.setImageResource(R.drawable.otter)
             }
-            if (capitalLetterGridList.get(position).gridName == "P") {
-                letterTv.text = "P"
+            if (smallLetterGridList.get(position).gridName == "p") {
+                letterTv.text = "p"
                 pronunciationTv.text = "পি"
                 wordTv.text = "Parrot"
                 meaningTv.text = "টিয়া পাখি"
                 objectImg.setImageResource(R.drawable.tiya)
             }
 
-            if (capitalLetterGridList.get(position).gridName == "Q") {
-                letterTv.text = "Q"
+            if (smallLetterGridList.get(position).gridName == "q") {
+                letterTv.text = "q"
                 pronunciationTv.text = "কিউ"
                 wordTv.text = "Quill"
                 meaningTv.text = "পালকের কলম"
                 objectImg.setImageResource(R.drawable.quill)
             }
 
-            if (capitalLetterGridList.get(position).gridName == "R") {
-                letterTv.text = "R"
+            if (smallLetterGridList.get(position).gridName == "r") {
+                letterTv.text = "r"
                 pronunciationTv.text = "আর"
                 wordTv.text = "Radish"
                 meaningTv.text = "মুলা"
                 objectImg.setImageResource(R.drawable.radish)
             }
 
-            if (capitalLetterGridList.get(position).gridName == "S") {
-                letterTv.text = "S"
+            if (smallLetterGridList.get(position).gridName == "s") {
+                letterTv.text = "s"
                 pronunciationTv.text = "এস"
                 wordTv.text = "Squirrel"
                 meaningTv.text = "কাঠবিড়াল"
                 objectImg.setImageResource(R.drawable.squirrel)
             }
-            if (capitalLetterGridList[position].gridName == "T") {
-                letterTv.text = "T"
+            if (smallLetterGridList[position].gridName == "t") {
+                letterTv.text = "t"
                 pronunciationTv.text = "টি"
                 wordTv.text = "Tiger"
                 meaningTv.text = "বাঘ"
                 objectImg.setImageResource(R.drawable.tiger)
             }
-            if (capitalLetterGridList.get(position).gridName == "U") {
-                letterTv.text = "U"
+            if (smallLetterGridList.get(position).gridName == "u") {
+                letterTv.text = "u"
                 pronunciationTv.text = "ইউ"
                 wordTv.text = "Umbrella"
                 meaningTv.text = "ছাতা"
                 objectImg.setImageResource(R.drawable.chata)
             }
-            if (capitalLetterGridList.get(position).gridName == "V") {
-                letterTv.text = "V"
+            if (smallLetterGridList.get(position).gridName == "v") {
+                letterTv.text = "v"
                 pronunciationTv.text = "ভি"
                 wordTv.text = "Vas"
                 meaningTv.text = "দানি"
                 objectImg.setImageResource(R.drawable.vas)
             }
-            if (capitalLetterGridList.get(position).gridName == "W") {
-                letterTv.text = "W"
+            if (smallLetterGridList.get(position).gridName == "w") {
+                letterTv.text = "w"
                 pronunciationTv.text = "ডব্লিউ"
                 wordTv.text = "Water melon"
                 meaningTv.text = "তরমুজ"
                 objectImg.setImageResource(R.drawable.tormuj)
             }
-            if (capitalLetterGridList.get(position).gridName == "X") {
-                letterTv.text = "X"
+            if (smallLetterGridList.get(position).gridName == "x") {
+                letterTv.text = "x"
                 pronunciationTv.text = "এক্স"
                 wordTv.text = "Xebec"
                 meaningTv.text = "জেবেক"
                 objectImg.setImageResource(R.drawable.xebec)
             }
-            if (capitalLetterGridList.get(position).gridName == "Y") {
-                letterTv.text = "Y"
+            if (smallLetterGridList.get(position).gridName == "y") {
+                letterTv.text = "y"
                 pronunciationTv.text = "ওয়াই"
                 wordTv.text = "Yo-yo"
                 meaningTv.text = "ইয়ো ইয়ো"
                 objectImg.setImageResource(R.drawable.yo_yo)
             }
-            if (capitalLetterGridList.get(position).gridName == "Z") {
-                letterTv.text = "Z"
+            if (smallLetterGridList.get(position).gridName == "z") {
+                letterTv.text = "z"
                 pronunciationTv.text = "যেড"
                 wordTv.text = "Zebra"
                 meaningTv.text = "জেব্রা"
                 objectImg.setImageResource(R.drawable.zebra)
             }
         })
-
     }
 }

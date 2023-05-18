@@ -10,6 +10,7 @@ import com.example.shonamonirprothompath.adapter.MainGridAdapter
 import com.example.shonamonirprothompath.alphabet.bangla.BanjonBornoActivity
 import com.example.shonamonirprothompath.alphabet.bangla.ShorBornoActivity
 import com.example.shonamonirprothompath.alphabet.english.CapitalLetterActivity
+import com.example.shonamonirprothompath.alphabet.english.SmallLetterActivity
 import com.example.shonamonirprothompath.model.MainGridModel
 
 class AlphabetActivity : AppCompatActivity() {
@@ -38,6 +39,9 @@ class AlphabetActivity : AppCompatActivity() {
             }
             if (alphabetGridList.get(position).gridName == "Capital Letter") {
                 startActivity(Intent(this@AlphabetActivity, CapitalLetterActivity::class.java))
+            }
+            if (alphabetGridList.get(position).gridName == "Small Letter") {
+                startActivity(Intent(this@AlphabetActivity, SmallLetterActivity::class.java))
             }
         })
     }
